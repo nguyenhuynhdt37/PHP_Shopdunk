@@ -50,6 +50,10 @@ body {
     background: rgba(251, 251, 253, .8);
 }
 
+.order {
+    box-shadow: var(--box-shadow);
+}
+
 .header__more i:hover,
 .auth-form-btn:hover,
 .nav-link:hover {
