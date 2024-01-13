@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Bootstrap Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá bán</th>
+                    <th>Số lượng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://shopdunk.com/images/thumbs/0022266_iphone-15-pro-max-256gb_80.png" alt="iPhone 15 Plus Black" width="50"></td>
+                    <td>iPhone 15 Plus<br>Màu sắc: black<br>Dung lượng: 128GB</td>
+                    <td>26,990,000đ</td>
+                    <td>
+                        <input type="number" min="1" max="10" value="1">
+                        <button class="btn btn-primary">Thêm vào giỏ</button>
+                    </td>
+                </tr>
+                <!-- Thêm các sản phẩm khác tương tự -->
+            </tbody>
+        </table>
+        <button class="btn btn-outline-primary">Tiếp tục mua sắm</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

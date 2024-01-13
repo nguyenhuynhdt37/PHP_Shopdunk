@@ -3,20 +3,28 @@
         {
             "id": "black",
             "images": [
-                "https:\/\/shopdunk.com\/images\/thumbs\/0001207_space-gray_550.webp"
+                "https:\/\/shopdunk.com\/images\/thumbs\/0009496_iphone-14-plus-128gb_550.webp",
+                "https:\/\/shopdunk.com\/images\/thumbs\/0009498_iphone-14-plus-128gb_550.webp",
+                "https:\/\/shopdunk.com\/images\/thumbs\/0009498_iphone-14-plus-128gb_550.webp"
+            ]
+        },
+        {
+            "id": "red",
+            "images": [
+                "https:\/\/shopdunk.com\/images\/thumbs\/0009532_iphone-14-plus-128gb_550.png"
             ]
         }
     ],
     "prices": [
         {
-            "id": "64GB",
-            "old": "19990000",
-            "new": "14900000"
+            "id": "128GB",
+            "old": "29990000",
+            "new": "26990000"
         },
         {
-            "id": "128GB",
-            "old": "23990000",
-            "new": "19990000"
+            "id": "512GB",
+            "old": "35000000",
+            "new": "29990000"
         }
     ]
 }

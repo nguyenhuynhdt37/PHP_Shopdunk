@@ -58,6 +58,27 @@ $result = mysqli_query($conn, $sql);
     .billing_name-user:focus {
         outline: 1px solid #c2c1c1;
     }
+
+    @media (max-width: 1039px) {
+        .pay {
+            background-color: #fff;
+            margin-top: 2rem;
+        }
+    }
+
+    @media (max-width: 739px) {
+        .cart-title {
+            display: none;
+        }
+
+        .cart-img {
+            width: 50% !important;
+        }
+
+        .box-img img {
+            width: 100% !important;
+        }
+    }
 </style>
 
 <div class="cart">
@@ -78,49 +99,58 @@ $result = mysqli_query($conn, $sql);
             </div>
             <div class="list_product container mt-4">
                 <div class="row product_details px-2">
-                    <div class="col-lg-8 bg-white px-5" style="border-radius: 1rem;">
+                    <div class="col-sm-12 col-lg-8 bg-white px-5" style="border-radius: 1rem;">
                         <?php
                         if (mysqli_num_rows($result) > 0) {
-                        ?> <table class="list-title p-0 m-5 border-button">
-                                <tr class="" style="height: 10 rem !important;">
-                                    <th class="fs-4 fw-bold ps-4">Hình ảnh</th>
-                                    <th class="fs-4 fw-bold">Tên sản phẩm</th>
-                                    <th class="fs-4 fw-bold">Giá bán</th>
-                                    <th class="fs-4 fw-bold">Số lượng</th>
-                                </tr>
-                                <?php
-                                while ($row = mysqli_fetch_array($result)) { ?>
+                        ?>
+                            <div class="table-responsive2">
+                                <table class="table list-title p-0 m-5 border-button">
+                                    <thead class="cart-title">
+                                        <tr class="" style="height: 10 rem !important;">
+                                            <th class="fs-4 fw-bold ps-4">Hình ảnh</th>
+                                            <th class="fs-4 fw-bold">Tên sản phẩm</th>
+                                            <th class="fs-4 fw-bold">Giá bán</th>
+                                            <th class="fs-4 fw-bold">Số lượng</th>
+                                            <th class="fs-4 fw-bold">Xóa bỏ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        while ($row = mysqli_fetch_array($result)) { ?>
+                                            <tr class="" style="border-bottom: 1px solid #99999996;">
+                                                <td class=" fs-4 fw-bold cart-img" style="width: 25%;">
+                                                    <span class="box-img">
+                                                        <img src="<?= $row['thumbnail'] ?>" alt="" style="width: 60%;">
+                                                    </span>
 
-                                    <tr class="" style="border-bottom: 1px solid #99999996;">
-                                        <td class=" fs-4 fw-bold" style="width: 25%">
-                                            <img src="<?= $row['thumbnail'] ?>" alt="" style="width: 50%;">
-                                        </td>
-                                        <td class="fs-4 fw-bold  style=" width: 25%"">
-                                            <p class="product_name m-0"><?= $row['title'] ?></p>
-                                            <p class="product_color m-0 fs-5 text-secondary">Màu sắc:
-                                                <span class="p_color"><?= $row['color_name'] ?></span>
-                                            </p>
-                                            <p class="product_namex m-0 fs-5">Dung lượng:
-                                                <span class='memory_pr'><?= $row['memory_name'] ?></span>
-                                            </p>
-                                        </td>
-                                        <td class="fs-4 fw-bold  product_price" width: 25%">
-                                            <?= number_format($row['discount']) ?>₫
-                                        </td>
-                                        <td class="fs-4 fw-bold" style="width: 25%">
-                                            <span class="d-flex align--center product_quantity px-5 py-2 justify-content-center" style="background-color: #F5F5F7; border-radius: 1rem; position: relative; width: 10rem">
-                                                <i data-btn="down" class="quantity__icon-down fa-solid fa-window-minimize text-primary"></i>
-                                                <span class="quantity text-secondary"><?= $row['soluong'] ?></span>
-                                                <i data-btn="up" class="quantity__icon-up fa-solid fa-plus text-primary"></i>
-                                            </span>
-                                        </td>
-                                        <td class="fs-4 fw-bold">
-                                            <i class="trash fa-solid fa-trash"></i>
-                                        </td>
-
-                                    </tr>
-                                <?php   } ?>
-                            </table>
+                                                </td>
+                                                <td class="fs-4 fw-bold">
+                                                    <p class="product_name m-0"><?= $row['title'] ?></p>
+                                                    <p class="product_color m-0 fs-5 text-secondary">Màu sắc:
+                                                        <span class="p_color"><?= $row['color_name'] ?></span>
+                                                    </p>
+                                                    <p class="product_namex m-0 fs-5">Dung lượng:
+                                                        <span class='memory_pr'><?= $row['memory_name'] ?></span>
+                                                    </p>
+                                                </td>
+                                                <td class="fs-4 fw-bold  product_price">
+                                                    <?= number_format($row['discount']) ?>₫
+                                                </td>
+                                                <td class="fs-4 fw-bold">
+                                                    <span class="d-flex align--center product_quantity px-5 py-2 justify-content-center" style="background-color: #F5F5F7; border-radius: 1rem; position: relative; width: 10rem">
+                                                        <i data-btn="down" class="quantity__icon-down fa-solid fa-window-minimize text-primary"></i>
+                                                        <span class="quantity text-secondary"><?= $row['soluong'] ?></span>
+                                                        <i data-btn="up" class="quantity__icon-up fa-solid fa-plus text-primary"></i>
+                                                    </span>
+                                                </td>
+                                                <td class="fs-4 fw-bold">
+                                                    <i class="trash fa-solid fa-trash"></i>
+                                                </td>
+                                            </tr>
+                                        <?php   } ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         <?php } else { ?>
                             <script>
                                 const x = `<div class="order_empty">
@@ -139,8 +169,8 @@ $result = mysqli_query($conn, $sql);
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 ">
-                        <div class="bg-white text-center" style="border-radius: 1rem; padding: 2rem 5rem;">
+                    <div class="col-sm-12 col-lg-4  pay">
+                        <div class="bg-white text-center w-100" style="border-radius: 1rem; padding: 2rem 5rem;">
 
                             <p class=" d-flex justify-content-between fs-4 fw-bolder py-5">Tổng cộng: <span class="text-primary price_sum">0đ</span></p>
                             <button type="submit" name="order" class="btn order2 btn-primary py-2 fs-4 px-4">Tiến hành thanh toán</button>
@@ -173,9 +203,9 @@ $result = mysqli_query($conn, $sql);
                     <i class="fa-solid fa-xmark icon-exit fs-1"></i>
                 </div>
                 <div class="card-img">
-                    <img class="img-fluid" src="https://i.imgur.com/4niebFr.jpg" style="width: 25%">
+                    <img class="img-fluid" src="https://i.imgur.com/4niebFr.jpg">
                 </div>
-                <div class="card-title fs-1 mt-4 fw-bold">
+                <div class=" card-title fs-1 mt-4 fw-bold">
                     <p>Đặt Hàng thành công!</p>
                 </div>
                 <div class="card-text fs-2 mb-2">
