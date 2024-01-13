@@ -81,9 +81,9 @@
 
         <!-- Main Content -->
         <div class="col-7">
-            <h1 class="analyse-title">Quản lý đơn hàng</h1>
+            <h1 class="analyse-title mb-4">Quản lý đơn hàng</h1>
             <div class="container-fluid">
-                <div class="box p-4 bg-white">
+                <div class="box p-4 bg-white" style="border-radius: 2rem;">
                     <ul class="nav nav-fill nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
                             <a class="nav-link active" id="fill-tab-0" data-bs-toggle="tab" href="#fill-tabpanel-0"
@@ -107,7 +107,7 @@
                             <div class="cart-detail my-4 p-3 border border-success rounded-2 bg-light">
                                 <table class="table table-light table-borderless">
                                     <thead>
-                                        <tr>
+                                        <tr class="" style="border-bottom: 1px solid #a5a3a3;">
                                             <th style="width: 20rem" class="product-picture">khách hàng</th>
                                             <th class=" product">Tên sản phẩm </th>
                                             <th class="unit-price">Tổng tiền </th>
@@ -115,7 +115,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <tr style="border-bottom: 1px solid #a5a3a3;">
                                             <td>
                                                 <h3 class="name_client">
                                                     Nguyễn Xuân Huỳnh
@@ -123,6 +123,57 @@
                                                     <p class="address">Xóm 6, xã Nghĩa Hành, huyện Tân Kỳ, tỉnh Nghệ An
                                                     </p>
                                                     <p class="phone-number">0365043804</p>
+                                                    <p class="date">Ngày đặt: 121212</p>
+                                            </td>
+                                            <td class=" product">
+                                                <div class="product-name">
+                                                    iPhone 15 Pro Max
+                                                </div>
+                                                <span class="total">
+                                                    <span>Dung lượng:
+                                                        512GB
+                                                    </span> <br>
+                                                    <span>Số lượng: 10</span>
+                                                </span>
+
+                                            </td>
+                                            <td>
+                                                <span>99.9999.9999đ</span>
+                                            </td>
+
+                                            <td>Đang giao</td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <div class="cart-options d-flex justify-content-end mt-4">
+                                    <div class="selected-checkout-attributes"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="fill-tabpanel-1" role="tabpanel" aria-labelledby="fill-tab-1">
+                            <div class="cart-detail my-4 p-3 border border-success rounded-2 bg-light">
+                                <table class="table table-light table-borderless">
+                                    <thead>
+                                        <tr class="" style="border-bottom: 1px solid #a5a3a3;">
+                                            <th style="width: 20rem" class="product-picture">khách hàng</th>
+                                            <th class=" product">Tên sản phẩm </th>
+                                            <th class="unit-price">Tổng tiền </th>
+                                            <th class="quantity"> Lựa chọn </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom: 1px solid #a5a3a3;">
+                                            <td>
+                                                <h3 class="name_client">
+                                                    Nguyễn Xuân Huỳnh
+                                                    </h2>
+                                                    <p class="address">Xóm 6, xã Nghĩa Hành, huyện Tân Kỳ, tỉnh Nghệ An
+                                                    </p>
+                                                    <p class="phone-number">0365043804</p>
+                                                    <p class="date">Ngày đặt: 121212</p>
                                             </td>
                                             <td class=" product">
                                                 <div class="product-name">
@@ -141,10 +192,10 @@
                                             </td>
                                             <td>
                                                 <button class=" border-0 px-3 py-2 rounded-2 bg-danger text-white
-                                                    huydon" data_id="1">Từ chối
+                                                huydon" data_id="1">Từ chối
                                                 </button>
                                                 <button class=" border-0 px-3 py-2 rounded-2 bg-primary text-white
-                                                    huydon" data_id="1">Phê duyệt
+                                                huydon" data_id="1">Phê duyệt
                                                 </button>
                                             </td>
                                             </td>
@@ -159,8 +210,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="fill-tabpanel-1" role="tabpanel" aria-labelledby="fill-tab-1">Tab Tab
-                            2 selected</div>
                         <div class="tab-pane" id="fill-tabpanel-2" role="tabpanel" aria-labelledby="fill-tab-2">Tab Tab
                             3 selected</div>
                         <div class="tab-pane" id="fill-tabpanel-3" role="tabpanel" aria-labelledby="fill-tab-3">Tab Tab

@@ -615,7 +615,7 @@ if ($resultColor->num_rows > 0 && $resultMemory->num_rows > 0 && $name_pr->num_r
 <script>
     const $$ = document.querySelectorAll.bind(document)
     const $ = document.querySelector.bind(document)
-    fetch('../../jsonServer/product_details.json')
+    fetch('./jsonServer/product_details.json')
         .then(response => {
             return response.json();
         })
