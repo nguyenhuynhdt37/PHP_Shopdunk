@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary: #0066CC;
+    --text: #515154;
+}
+footer {
+    border-top: 2px solid var(--primary);
+}
+.card-img-top {
+    object-fit: cover;
+}
+
+.actual-price {
+    color: var(--primary);
+}
+
+.list_ev,
+.bg__banner {
+    margin: 5rem 0 !important;
+}
+.mode1 {
+    color: var(--primary) !important;
+    font-weight: 600;
+    border-bottom: 0.2rem solid var(--primary) ;
+}
+
+
+.btn__show {
+    /* color: #0066CC !important; */
+    border-radius: 0.8rem;
+    padding: 0.8rem 4rem;
+}
+
+.iphone_item {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 2.5rem;
+    line-height: 4rem;
+}
+.iphone_item > a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text);
+}
+.box-x {
+    display: grid;
+    justify-items: center;
+    min-height: 400px !important;
+    align-content: space-between;
+    /* height: 100%; */
+}
+
+.img3 {
+    margin-top: 50px;
+}
+.img-new  {
+    padding-bottom: 3rem;
+}
+@media(max-width: 740px) {
+    .mb_hiden {
+        display: none;
+    }
+
+    .img-band {
+        content: url(https://shopdunk.com/images/uploaded/banner-doanh-nghiep-04.png);
+    }
+
+    .note-xa {
+        padding: 0 10px !important;
+        margin-bottom: 2rem;
+    }
+    .card-img-top {
+        min-height: 218px !important;
+    }
+    .img3 {
+        padding: 2rem 0;
+    }
+    .old-price, .price-ratio-container {
+        font-size: 1rem !important;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+    }
+    .product__box {
+        margin-top: 4rem;
+    }
+    .category__box {
+        margin-top: 4rem !important;
+    }
+    .product__sub {
+        margin: 0 !important;
+        margin-top: -3rem !important;
+    }
+
+}
+
+@media(max-width: 1023px) {
+    .card-img-top {
+        height: 140px;
+    }
+    .product__fit--title {
+        font-size: 1.8rem !important;
+    }
+    .product__fit--more {
+        font-size: 1.2rem !important;
+    }
+    .product__fit {
+        min-height: 19rem !important;
+    }
+    .product__fit--img {
+        width: 110% !important;
+    }
+    .category__box {
+        padding: 2rem !important;
+    }
+
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .card-img-top {
+        height: 140px;
+    }
+
+    .bg__banner {
+        transform: scale(1.40);
+    }
+}

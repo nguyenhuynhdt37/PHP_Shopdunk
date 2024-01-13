@@ -1,0 +1,15 @@
+.card, .modal-content1 {
+    animation: slidein ease-in .4s !important;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateY(-40%);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;   
+    }
+}

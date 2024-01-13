@@ -1,0 +1,312 @@
+/* >= PC */
+@media (min-width: 992px) {
+    /* start Header on PC */
+    .header__more {
+        order: 1;
+    }
+    /* end */
+    #carousel-pc {
+        display: block;
+    }
+
+    #carousel-mobile {
+        display: none;
+    }
+
+    .box__iphone-img2,
+    .box__iphone-img3 {
+        width: 80%;
+    }
+    /* Footer */
+    footer .text-decoration-none,
+    h5 {
+        margin-left: 28%;
+    }
+}
+
+/* Large Tablet */
+@media (max-width: 992px) {
+    #carousel-pc {
+        display: block;
+    }
+
+    #carousel-mobile {
+        display: none;
+    }
+    /* start header for tablet */
+    .header__logo i {
+        font-size: 28px !important;
+    }
+    .header__more {
+        text-align: end;
+        width: 88%;
+    }
+    .navbar a {
+        font-size: 22px !important;
+    }
+    
+    .nav-link {
+        margin-left: 0 !important;
+    }
+    .auth-form-btn {
+        margin: 16px 18px 20px 0 !important;
+    }
+    /* end */
+    .iphone__left h2,
+    .iphone__left h3,
+    .iphone__right h2,
+    .iphone__right h3 {
+        font-size: 26px !important;
+    }
+
+    .content__ipad-img1,
+    .content__ipad-outro,
+    .content__ipad-display,
+    .content__ipad-desc {
+        width: 90%;
+    }
+
+    .content__ipad-img2 {
+        width: 100%;
+        transform: scale(1.8);
+        margin: 20px 0;
+    }
+
+    .content__ipad-display h1 {
+        margin-top: 80px;
+        font-size: 40px;
+        position: relative;
+    }
+
+    .content__ipad-display p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: justify;
+        margin-top: 40px;
+    }
+
+    .content__ipad-img3 {
+        width: 100%;
+    }
+
+    .pencil-title {
+        width: 77%;
+    }
+
+    .pencil-title h1 {
+        font-size: 54px;
+    }
+
+    .pencil-subtitle,
+    .pencil-features {
+        width: 100%;
+        text-align: center;
+        margin: 24px auto;
+    }
+
+    .pencil-subtitle p,
+    .pencil-features p {
+        font-weight: 400;
+    }
+
+    .benefit__item:hover,
+    .apple-watch:hover,
+    .airpods:hover,
+    .ipad-air:hover,
+    .box__iphone:hover {
+        transform: none;
+    }
+}
+
+/* Small Tablet and Mobile  */
+@media (max-width: 769px) {
+    #carousel-pc {
+        display: none !important;
+    }
+
+    #carousel-mobile {
+        display: block !important;
+    }
+
+    .app {
+        margin-top: 40px;
+    }
+
+    #searchModal input {
+        height: 44px;
+    }
+    /* start header for mobile */
+    .header__more {
+        text-align: end;
+        width: 86%;
+    }
+    /* end */
+    .box__iphone {
+        padding: 0 !important;
+        min-height: 420px;
+    }
+
+    .ios17 {
+        background: #fff url('../images/home-img/ios17_small-background.jpg') no-repeat top;
+        height: 400px;
+    }
+
+    .widgets-title {
+        font-size: 30px !important;
+    }
+
+    .widgets {
+        font-size: 30px !important;
+    }
+
+    .iphone-switch,
+    .iphone-security {
+        min-height: 400px;
+    }
+
+    .iphone-switch h3,
+    .iphone-security h3 {
+        font-size: 30px !important;
+        line-height: 36px;
+    }
+
+    .big-title {
+        font-size: 4rem !important;
+    }
+
+    .switch-app p {
+        font-size: 3rem !important;
+    }
+
+    .an-toan {
+        background-image: url(../images/home-img/safety-small.jpg);
+        min-height: 340px;
+    }
+
+    .apple-watch {
+        background: url('../images/home-img/apple-watch_mb.jpg') no-repeat center;
+    }
+
+    .ipad-air {
+        background: url('../images/home-img/ipad-air_mb.jpg') no-repeat center;
+    }
+
+    .airpods {
+        background: url('../images/home-img/airpods-pro_mb.jpg') no-repeat center;
+    }
+
+    .benefits-box,
+    .features-box {
+        padding: 30px 20px;
+    }
+
+    .swipe-to-right {
+        display: block !important;
+    }
+}
+
+/* Only Mobile  */
+@media (max-width: 576px) {
+    .box-mobile {
+        padding: 0 !important;
+    }
+
+    .box-mobile:first-child {
+        margin-top: 0 !important;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: block !important;
+    }
+    /* start header */
+    .header__more {
+        text-align: end;
+        width: 77%;
+    }
+    /* end */
+    .iphone__left h2,
+    .iphone__right h2 {
+        font-size: 22px !important;
+    }
+
+    .box__iphone-img2,
+    .box__iphone-img3 {
+        width: 80%;
+    }
+
+    #ios17-box h1 {
+        font-size: 38px !important;
+        line-height: 56px !important;
+    }
+
+    .a17-img {
+        width: 80%;
+    }
+
+    .iphone-switch h3 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .content__ipad-outro h1,
+    .rainbow {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .screen-item-wrap h1 {
+        font-size: 40px;
+    }
+
+    .imac,
+    .macbook-air {
+        height: 440px;
+        margin-bottom: 20px;
+    }
+
+    .imac {
+        background: url('../images/home-img/imac_small.jpg') no-repeat center;
+    }
+
+    .macbook-air {
+        background: url('../images/home-img/macbook-air_small.jpg') no-repeat center;
+    }
+
+    .mac__description h1,
+    .mac__title {
+        font-size: 40px;
+    }
+
+    .mac__description h3 {
+        font-size: 20px;
+    }
+
+    .mac__intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mac__slogan {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .benefit__title {
+        font-size: 32px;
+    }
+
+    .benefits-box__content {
+        font-size: 36px !important;
+        line-height: 42px;
+    }
+    /* Footer */
+    footer {
+        text-align: center;
+    }
+}

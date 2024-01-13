@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+:root {
+    --primary-blue: #0d6efd;
+    --text-color: #000;
+    --white-color: #fff;
+    --border-color: #dbdbdb;
+    --text-color: #333;
+}
+
+.navbar a,
+.auth-form-btn {
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+
+.header__more i:hover,
+.auth-form-btn:hover {
+    opacity: .7;
+}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 18px;
+    padding: 0 12px;
+    font-size: 1.3rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #777;
+}
+
+.auth-form__policy-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    padding: 0 40px;
+    margin-top: 16px;
+}
+
+.modal-content {
+    border-radius: .8rem;
+}
+
+.Slogan__title {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    font-weight: 600;
+    background-color: #F5F5F7;
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 2px 8px 0px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+#fixed-title {
+    position: fixed;
+    top: 49px;
+    left: 0;
+    z-index: 999;
+}
+
+.brand {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.brand:nth-child(1) {
+    color: #000;
+}
+
+.SlideShow {
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+    width: 100%;
+}
+
+.content_product_iphone {
+    width: 1200px;
+    position: relative;
+    top: 600px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.product_iphone {
+    background-color: #f5f5f7;
+}
+
+.product_iphone_list {
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 10px 0px 40px;
+}
+
+.product_iphone_list_item .title a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #515154;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+.product_iphone_list_item .title1 a {
+    border-bottom: #0d6efd solid 2px;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.product_iphone {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 20px 20px;
+}
+
+.product_list
+{
+background-color: #f5f5f7;
+}
+
+.container__product__items {
+    width: 285px;
+    height: 412px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.img__product {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    position: absolute;
+    top: 47px;
+    left: 20px;
+}
+
+.img__product__new {
+    width: 52px;
+    height: 22.65px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    object-fit: cover;
+
+}
+
+.container__name {
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.container__product__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    gap: 10px;
+}
+
+.container__price_new {
+    color: #0066CC;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.container__price_old {
+    color: #86868B;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.container__discount {
+    color: #86868B;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.img__product:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.Switchpages {
+    font-weight: bolder;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    margin: auto;
+    background-color: #f5f5f7;
+}
+
+
+.Switchpages_3,
+.Switchpages_1,
+.Switchpages_2 {
+    padding: 5px 10px 5px 10px;
+    background: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Switchpages_1 {
+    color: white;
+    background-color: black;
+}
+
+.parameter_title {
+    width: 100%;
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.parameter_product_iphone {
+    width: 70%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+}
+
+.parameter_product_item {
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.parameter_product_item .imgiphone {
+    object-fit: cover;
+    width: 180px;
+    height: 257px;
+    margin-bottom: 25px;
+}
+
+.parameter_product_item:first-child .parameter_item_content h4,
+.parameter_product_item:nth-child(2) .parameter_item_content h4,
+.parameter_product_item:nth-child(3) .parameter_item_content h4,
+.parameter_product_item:nth-child(4) .parameter_item_content h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.parameter_product_item:first-child .parameter_item_content p,
+.parameter_product_item:nth-child(2) .parameter_item_content p,
+.parameter_product_item:nth-child(3) .parameter_item_content p,
+.parameter_product_item:nth-child(4) .parameter_item_content p {
+    font-size: 12px;
+
+}
+
+.parameter_product_item:first-child .parameter_item_content span,
+.parameter_product_item:nth-child(2) .parameter_item_content span,
+.parameter_product_item:nth-child(3) .parameter_item_content span,
+.parameter_product_item:nth-child(4) .parameter_item_content span {
+    font-size: 12px;
+}
+
+.parameter_product_item:first-child .parameter_item_content button,
+.parameter_product_item:nth-child(2) .parameter_item_content button,
+.parameter_product_item:nth-child(3) .parameter_item_content button,
+.parameter_product_item:nth-child(4) .parameter_item_content button {
+    margin: 10px;
+    font-size: 12px;
+    padding: 0px 10px;
+    border: black solid 1px;
+    color: white;
+    border-radius: 10px;
+    background-color: #0d6efd;
+
+}
+
+@media (min-width: 992px) {
+
+    footer .text-decoration-none,
+    h5 {
+        margin-left: 28%;
+    }
+}
+
+.container_footer {
+    position: relative;
+    top: 310px;
+}
+
+.text-center {
+    position: relative;
+    top: 300px;
+}
