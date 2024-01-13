@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css?version=51" />
     <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.css?version=51">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?version=51" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 </head>
 <style>
@@ -43,7 +44,8 @@
 
 <body>
     <div class="app">
-
+        <!-- Scroll To Top Button -->
+        <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
         <?php
         include_once('./handle/connect.php');
         include_once("./html/header/index.php");
@@ -94,7 +96,6 @@
         }
         include_once("./html/footer/index.php");
         ?>
-        <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
     <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./assets/js/blossom.js?"></script>

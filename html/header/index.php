@@ -13,7 +13,7 @@
         position: absolute;
         content: '';
         width: 15rem;
-        height: 2.5rem;
+        height: 3.3rem;
         top: 2rem;
         left: 0;
         z-index: 66;
@@ -21,6 +21,10 @@
 
     .user_name:hover .order_deltais {
         display: block !important;
+    }
+
+    .order_link:hover {
+        color: green !important;
     }
 
     @media(max-width: 1023px) {
@@ -47,7 +51,6 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 ?>
 <div class="header">
-    <!-- Scroll To Top Button -->
     <!-- Header Navbar by Bootstrap -->
     <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
         <div class="container">
@@ -95,8 +98,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         <a class="nav-link fs-4 text-dark mx-4" href="index.php?page_layout=home">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fs-4 text-dark mx-4" aria-current="page" href="index.php?page_layout=product_all">Tất cả sản
-                            phẩm</a>
+                        <a class="nav-link active fs-4 text-dark mx-4" aria-current="page" href="index.php?page_layout=product_all">Tất cả sản phẩm</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-4 text-dark mx-4" href="index.php?page_layout=iphone_list">iPhone</a>
@@ -123,21 +125,23 @@ if (session_status() == PHP_SESSION_NONE) {
                     <div class="box-user position-relative fs-4 text-capitalize d-flex align-items-center">
                         <span class="user_name d-flex align-items-center">
                             <div class="span d-inline">
-                                <img src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-84.jpg" style="width: 3rem; border-radius: 50%; margin-right: 1rem;" alt="">
+                                <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg" style="width: 3rem; border-radius: 50%; margin-right: 1rem;" alt="">
                             </div>
                             <?= $user_name; ?>
-                            <a href="index.php?page_layout=orders" class=" text-dark">
-                                <ul class="order p-0 position-absolute bg-white" style="top: 3.8rem">
-                                    <li class="order_deltais p-2 bg-body-secondary d-none" style="border-radius: 1rem; width: 14rem">Chi tiết đơn hàng</li>
-                                    <li class="order_deltais p-2 bg-body-secondary d-none mt-2" style="border-radius: 1rem; width: 14rem">
+                                <ul class="order p-0 position-absolute bg-body-tertiary rounded-3 text-center" style="top: 4.8rem;left: 3rem;width: 16rem">
+                                    <li class="order_deltais p-2 mb-2 d-none">
+                                        <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Tài khoản của tôi</a>
+                                    </li>    
+                                    <li class="order_deltais p-2 mb-2 d-none">
+                                        <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Chi tiết đơn hàng</a>
+                                    </li>
+                                    <li class="order_deltais p-2 d-none mt-2" style="cursor: default;">
                                         <form method="post">
                                             <button type="submit" name="logout" class="btn btn-success me-3 ms-4 fs-4">Đăng Xuất</button>
                                         </form>
                                     </li>
                                 </ul>
-                            </a>
                         </span>
-
                     </div>
                 <?php } ?>
             </div>

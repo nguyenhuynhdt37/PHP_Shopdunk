@@ -50,6 +50,10 @@ body {
     background: rgba(251, 251, 253, .8);
 }
 
+.order {
+    box-shadow: var(--box-shadow);
+}
+
 .header__more i:hover,
 .auth-form-btn:hover,
 .nav-link:hover {
@@ -476,7 +480,7 @@ body {
 .apple-watch:hover,
 .airpods:hover,
 .ipad-air:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .apple-watch {
@@ -500,7 +504,7 @@ body {
 }
 
 .benefits__list::-webkit-scrollbar {
-    height: 0;
+    /* height: 0; */
 }
 
 .scroll-btn-wrap {
