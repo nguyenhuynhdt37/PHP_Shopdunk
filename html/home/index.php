@@ -10,14 +10,12 @@
         <!-- iPhone 15 series -->
         <div class="iphone-content row g-5 m-4">
             <div class="box-mobile col-md-6 col-sm-12">
-                <a href="" class="link-to-iphone text-decoration-none">
+                <a href="index.php?page_layout=iphone_list" class="link-to-iphone text-decoration-none">
                     <div class="iphone__left pt-5 bg-black">
                         <div class="intro">
-                            <h2 class="text-light fw-bold" style="font-size: 36px; ">iPhone 15 Pro & 15 Pro Max
-                            </h2>
+                            <h2 class="text-light fw-bold" style="font-size: 36px; ">iPhone 15 Pro & 15 Pro Max</h2>
                             <h3 class="fs-1 mb-4" style="color: #9c9286; font-weight: 300;">T I T A N I U M.
-                                <br>Thật bền chắc. Thật
-                                nhẹ. Thật Pro.
+                                <br>Thật bền chắc. Thật nhẹ. Thật Pro.
                             </h3>
                         </div>
                         <img class="py-5" src="./assets/images/home-img/all_colors__iphone15pro.jpg" alt="">
@@ -25,13 +23,12 @@
                 </a>
             </div>
             <div class="box-mobile col-md-6 col-sm-12">
-                <a href="" class="link-to-iphone text-decoration-none">
+                <a href="index.php?page_layout=iphone_list" class="link-to-iphone text-decoration-none">
                     <div class="iphone__right">
                         <img class="py-5" src="./assets/images/home-img/iPhone-15-black-pink-large_preview_rev_1.png" alt="">
                         <div class="intro">
                             <h2 class="fw-bold me-5" style="color: #f84681; font-size: 32px;">iPhone 15 & 15 Plus
-                                <br>Màu
-                                sắc mới!
+                                <br>Màu sắc mới!
                             </h2> <br>
                             <h3 class="fs-1 text-dark">Trẻ trung <br>năng động <br>cá tính.</h3>
                         </div>
@@ -44,8 +41,9 @@
             <div class="box-mobile col-lg-4 col-md-12">
                 <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal" data-bs-target="#a17pro-box">
                     <div class="box__iphone py-5">
-                        <h2 class="box__iphone-text1 fs-1 text-center text-dark"><span class="fw-bold fs-1">A17
-                                Pro</span><br>Chip thay đổi cuộc chơi.
+                        <h2 class="box__iphone-text1 fs-1 text-center text-dark">
+                            <span class="fw-bold fs-1">A17 Pro</span>
+                            <br>Chip thay đổi cuộc chơi.
                             <br>Hiệu năng chấn động địa cầu.
                         </h2>
                         <img class="box__iphone-img1 m-5" src="./assets/images/home-img/a17pro_small.jpg" alt="">
@@ -89,7 +87,7 @@
                 <button type="button" class="box-btn btn p-0 w-100" data-bs-toggle="modal" data-bs-target="#switch-box">
                     <div class="iphone-switch">
                         <h3 class="text-center">Chuyển sang iPhone là siêu đơn giản.</h3>
-                        <img src="https://www.apple.com/vn/iphone/home/images/overview/why-iphone/switching_to_iphone__e3oz9r418awm_small_2x.jpg" alt="">
+                        <img src="./assets/images/home-img/chuyen-sang-iphone.jpg" alt="">
                     </div>
                 </button>
             </div>
@@ -114,7 +112,7 @@
                     <h1 class="text-light text-center fw-semibold">Hiệu năng như mơ. Màn hình tiên tiến không ngờ.
                         Kết nối không dây siêu nhanh. Năng lực Apple Pencil ở tầm cao mới.
                         Các tính năng mới mạnh mẽ trên iPadOS. Trải nghiệm iPad đỉnh cao.</h1>
-                    <a class="link-to-ipad mt-4" href="#">Đến cửa hàng ></a>
+                    <a class="link-to-ipad mt-4" href="index.php?page_layout=ipad_list">Đến cửa hàng ></a> 
                 </div>
                 <img class="content__ipad-img2" data-aos="zoom-out" data-aos-duration="2200" data-aos-offset="400" src="./assets/images/home-img/ipad-performance.jpg" alt="">
                 <div class="content__ipad-display">
@@ -201,7 +199,7 @@
                     <div class="macbook-pro__title">
                         <h1 style="font-size: 56px; font-weight: 600;">Macbook Pro</h1>
                         <h3 style="font-size: 28px; font-weight: 400;">Chấn động. Ấn tượng.</h3>
-                        <a class="go-to-shop" href="">Mua ngay ></a>
+                        <a class="go-to-shop" href="index.php?page_layout=mac_list">Mua ngay ></a>
                     </div>
                     <img src="./assets/images/home-img/macbook-pro_large.jpg" alt="">
                 </div>
@@ -210,26 +208,22 @@
         <!-- iMac and Macbook Air -->
         <div class="iphone-content row g-5 m-4">
             <div class="col-md-6 col-sm-12">
-                <button href="" class="box-btn btn p-0 w-100 link-to-mac text-decoration-none text-dark">
-                    <div class="imac pt-5">
-                        <div class="mac__description text-center">
-                            <h1>iMac</h1>
-                            <h3>Đầy sức mạnh</h3>
-                            <a class="go-to-shop" href="">Mua ngay ></a>
-                        </div>
+                <div class="imac pt-5">
+                    <div class="mac__description text-center">
+                        <h1>iMac</h1>
+                        <h3>Đầy sức mạnh</h3>
+                            <a class="go-to-shop" href="index.php?page_layout=mac_list">Mua ngay ></a>
                     </div>
-                </button>
+                </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <button href="" class=" box-btn btn p-0 w-100 link-to-mac text-decoration-none text-dark">
-                    <div class="macbook-air pt-5">
-                        <div class="mac__description text-center">
-                            <h1>Macbook Air 15 inch"</h1>
-                            <h3>Lớn ấn tượng. Mỏng không tưởng.</h3>
-                            <a class="go-to-shop" href="">Mua ngay ></a>
-                        </div>
+                <div class="macbook-air pt-5">
+                    <div class="mac__description text-center">
+                        <h1>Macbook Air 15 inch"</h1>
+                        <h3>Lớn ấn tượng. Mỏng không tưởng.</h3>
+                            <a class="go-to-shop" href="index.php?page_layout=mac_list">Mua ngay ></a>
                     </div>
-                </button>
+                </div>
             </div>
         </div>
         <!-- Video intro Mac -->
@@ -247,7 +241,7 @@
                         <h2 class="fs-1 lh-1"><i class="fa-brands fa-apple"></i> WATCH</h2>
                         <p class="fs-4 lh-1 text-danger">S e r i e s 9</p>
                         <p class="fs-3">Thông minh hơn. Sáng hơn. Quyền năng hơn.</p>
-                        <a class="fs-4 text-decoration-none" href="">Khám phá</a>
+                        <a class="fs-4 text-decoration-none" href="index.php?page_layout=watch_list">Khám phá</a>
                     </div>
                 </div>
             </div>
@@ -256,7 +250,7 @@
                     <div class="ipad-air__title text-center text-dark">
                         <h1 style="font-size: 40px;"><i class="fa-brands fa-apple"></i> iPad Air</h1>
                         <p class="fs-3 mt-2">Thấy là yêu. Vẽ là phiêu. Tuyệt diệu.</p>
-                        <a class="fs-4 text-decoration-none" href="">Khám phá</a>
+                        <a class="fs-4 text-decoration-none" href="index.php?page_layout=ipad_list">Khám phá</a>
                     </div>
                 </div>
             </div>
@@ -265,7 +259,7 @@
                     <div class="airpods__title text-center text-light">
                         <h1 style="font-size: 40px;"><i class="fa-brands fa-apple"></i> AirPods Pro</h1>
                         <p class="fs-3 mt-2">Âm Thanh Thích Ứng. Đang phát.</p>
-                        <a class="fs-4 text-decoration-none" href="">Khám phá</a>
+                        <a class="fs-4 text-decoration-none" href="index.php?page_layout=watch_list">Khám phá</a>
                     </div>
                 </div>
             </div>
@@ -282,8 +276,7 @@
         <!-- Customer's Benefits -->
         <div class="benefits row p-4 g-5">
             <div class="col-12">
-                <h1 class="benefit__title fw-semibold">Những lợi ích mà bạn <br>sẽ nhận được khi <br>đến với chúng
-                    tôi.</h1>
+                <h1 class="benefit__title fw-semibold">Những lợi ích mà bạn <br>sẽ nhận được khi <br>đến với chúng tôi.</h1>
                 <p class="swipe-to-right fs-4 ms-5 mt-4 d-none">Lướt sang phải để xem thêm >></p>
             </div>
 
@@ -301,8 +294,7 @@
                     <button type="button" class="box-btn btn text-start" data-bs-toggle="modal" data-bs-target="#benefit-box2">
                         <div class="benefit__wrap">
                             <img src="./assets/images/home-img/free-ship-icon.png" alt="">
-                            <p>Giao hàng <span style="color: #f84681;">miễn phí</span> vào ngày làm việc tiếp theo.
-                            </p>
+                            <p>Giao hàng <span style="color: #f84681;">miễn phí</span> vào ngày làm việc tiếp theo.</p>
                         </div>
                     </button>
                 </li>
@@ -318,8 +310,7 @@
                     <button type="button" class="box-btn btn text-start" data-bs-toggle="modal" data-bs-target="#benefit-box4">
                         <div class="benefit__wrap">
                             <img src="./assets/images/home-img/customize-icon.png" alt="">
-                            <p><span style="color: #bf04bc;">Tuỳ chỉnh</span> Mac của bạn và tạo phong cách riêng
-                                cho Apple Watch.</p>
+                            <p><span style="color: #bf04bc;">Tuỳ chỉnh</span> Mac của bạn và tạo phong cách riêng cho Apple Watch.</p>
                         </div>
                     </button>
                 </li>
@@ -359,8 +350,8 @@
                         <i class="fs-1 text-white fa-solid fa-xmark"></i>
                     </button>
                 </div>
-                <div class="modalenefits-box_
-                        <p class=" benefits-box__content">Chip A17 Pro. <br> Chiến thắng khủng cho game.</p>
+                <div class="modal-body benefits-box__body">
+                    <p class="benefits-box__content">Chip A17 Pro. <br> Chiến thắng khủng cho game.</p>
                     <p class="benefits-box__subcontent my-5">GPU mới cấp độ Pro hỗ trợ chơi những game
                         chưa từng thấy trên bất kỳ điện thoại thông minh nào.</p>
                     <img class="w-100 my-5" src="./assets/images/home-img/iphone-gaming.jpg" alt="">
@@ -419,8 +410,10 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h1 class=" text-center my-5" style="color: #777; font-size: 56px;">Tương thích với <span class="text-dark">USB-C.</span></h1>
+                <div class="modal-body benefits-box__body">
+                    <h1 class="text-center my-5" style="color: #777; font-size: 56px;">Tương thích với 
+                        <span class="text-dark">USB-C.</span>
+                    </h1>
                     <img class="d-block mx-auto my-5 w-100" src="./assets/images/home-img/diversity-connect.jpg" alt="">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -471,8 +464,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <p class=" benefits-box__content mb-5">Sắc màu xuyên suốt. <br>Bền chắc toàn diện.</p>
+                <div class="modal-body benefits-box__body">
+                    <p class="benefits-box__content mb-5">Sắc màu xuyên suốt. <br>Bền chắc toàn diện.</p>
                     <img class="w-100 my-5" src="./assets/images/home-img/iphone-15-more-colors.jpg" alt="">
                     <p class="mt-5" style="font-size: 40px; font-weight: 600;">Tạo màu bằng quy trình hóa học.</p>
                     <p class="benefits-box__subcontent text-primary-emphasis">Các ion kim loại siêu mịn đưa màu vào
@@ -489,8 +482,7 @@
                                 <p class="benefits-box__subcontent text-dark">Khung nhôm chuẩn hàng không vũ trụ vô
                                     cùng bền bỉ, cùng với phần cạnh được tạo viền mới mang lại cảm giác cầm nắm còn
                                     tuyệt vời hơn.
-                                    <span style="font-weight: 500; color: green;">75% nhôm trong vỏ máy là nhôm tái
-                                        chế</span>
+                                    <span style="font-weight: 500; color: green;">75% nhôm trong vỏ máy là nhôm tái chế</span>
                                 </p>
                             </div>
                         </div>
@@ -509,10 +501,9 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h1 class=" text-start fw-bold" style="color: #777; font-size: 56px; margin-bottom: 50px;">iOS
-                    17. <br>
-                    <span class="text-dark">Chọn phong cách. <br> Trao đổi liên hệ. <br> Tạo nhãn dán.</span>
+                <div class="modal-body benefits-box__body">
+                    <h1 class="text-start fw-bold" style="color: #777; font-size: 56px; margin-bottom: 50px;">iOS 17. <br>
+                        <span class="text-dark">Chọn phong cách. <br> Trao đổi liên hệ. <br> Tạo nhãn dán.</span>
                     </h1>
                     <img class="d-block mx-auto my-5 w-100" src="./assets/images/home-img/ios17-features_large.jpg" alt="">
                     <div class="row g-5">
@@ -541,8 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2 class="widgets-title text-danger fw-bold" style="font-size: 46px; margin-top: 50px;">Tiện
-                        Ích Tương Tác</h2>
+                    <h2 class="widgets-title text-danger fw-bold" style="font-size: 46px; margin-top: 50px;">Tiện Ích Tương Tác</h2>
                     <div class="row gy-5 my-5 d-flex rounded-5 bg-white" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
                         <div class="col-lg-5 d-flex align-items-center justify-content-center">
                             <div class="widgets fw-bold lh-sm" style="font-size: 50px;">
@@ -568,9 +558,9 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h1 class=" big-title text-center fw-bolder" style="font-size: 6rem; line-height: 1.05; letter-spacing: -0.015em;">
-                    Chuyển từ Android <br>sang iPhone thật dễ dàng.
+                <div class="modal-body benefits-box__body">
+                    <h1 class="big-title text-center fw-bolder" style="font-size: 6rem; line-height: 1.05; letter-spacing: -0.015em;">
+                            Chuyển từ Android <br>sang iPhone thật dễ dàng.
                     </h1>
                     <div class="row pt-5 bg-white rounded-5">
                         <div class="col text-center">
@@ -621,8 +611,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h1 class=" fw-bolder mb-5" style="font-size: 4rem;">Được thiết kế để tạo nên khác biệt.</h1>
+                <div class="modal-body benefits-box__body">
+                    <h1 class=" fw-bolder mb-5" style="font-size: 4rem;">Được thiết kế để tạo nên khác biệt.</h1>
                     <h2 class="fw-bold my-5" style="font-size: 3rem;">
                         <img src="./assets/images/home-img/lock-icon.png" alt="">
                         Quyền riêng tư.
@@ -663,9 +653,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Thanh toán hàng tháng thật dễ
-                    dàng.</h3>
+                <div class="modal-body benefits-box__body">
+                    <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Thanh toán hàng tháng thật dễ dàng.</h3>
                     <p class="benefits-box__content">Sản phẩm Apple nay dễ sở hữu hơn bao giờ hết.</p>
                     <p class="benefits-box__subcontent">Chia nhỏ chi phí cho các sản phẩm yêu thích
                         bằng cách trả hàng tháng. Trong khi thanh toán, bạn có thể chọn ưu đãi trả góp và
@@ -681,9 +670,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Giao hàng tiêu chuẩn miễn
-                    phí.</h3>
+                <div class="modal-body benefits-box__body">
+                    <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Giao hàng tiêu chuẩn miễn phí.</h3>
                     <p class="benefits-box__content">Từ cửa hàng đến địa chỉ của bạn, giao hàng luôn miễn phí.</p>
                     <p class="benefits-box__subcontent">Giao hàng luôn miễn phí. Nhưng để phục vụ bạn nhanh hơn,
                         chúng tôi cũng cung cấp dịch vụ giao hàng miễn phí vào ngày làm việc kế tiếp ở Hà Nội và
@@ -699,8 +687,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Apple Trade In</h3>
+                <div class="modal-body benefits-box__body">
+                    <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Apple Trade In</h3>
                     <p class="benefits-box__content">Nhận tín dụng đổi cũ lấy mới để mua thiết bị mới.</p>
                     <p class="benefits-box__subcontent">Chỉ cần thêm tùy chọn đổi cũ lấy mới khi bạn chọn
                         sản phẩm mới. Sau khi đã nhận được và xác minh thiết bị của bạn, chúng tôi sẽ áp dụng
@@ -717,8 +705,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Tùy Chỉnh Máy Mac Và Apple
+                <div class="modal-body benefits-box__body">
+                    <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Tùy Chỉnh Máy Mac Và Apple
                     Watch Của Bạn</h3>
                     <p class="benefits-box__content">Dựng một máy Mac phù hợp nhất với bạn.</p>
                     <p class="benefits-box__subcontent">Khi mua trực tuyến tại Apple, bạn có thể tùy chỉnh
@@ -737,8 +725,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Ứng dụng Apple Store</h3>
+                <div class="modal-body benefits-box__body">
+                    <h3 class=" modal-title benefits-box__title" id="exampleModalLabel">Ứng dụng Apple Store</h3>
                     <p class="benefits-box__content">Mua sắm trong ứng dụng Apple Store được thiết kế riêng cho bạn.
                     </p>
                     <p class="benefits-box__subcontent">Nhận đề xuất sản phẩm phù hợp với cá nhân, so sánh các phiên
@@ -758,8 +746,8 @@
                 <div class="modal-header benefits-box__header">
                     <button type="button" class="btn-close fs-2" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modalenefits-box_
-                        <p class=" benefits-box__content">Khắc miễn phí chỉ có tại Apple.</p>
+                <div class="modal-body benefits-box__body">
+                    <p class=" benefits-box__content">Khắc miễn phí chỉ có tại Apple.</p>
                     <p class="benefits-box__subcontent">Khắc kết hợp biểu tượng cảm xúc, tên, tên viết tắt và số lên
                         AirPods, AirTag, Apple Pencil (thế hệ thứ 2) hoặc iPad của bạn. Tất cả đều miễn phí. Và chỉ
                         có tại Apple.</p>
