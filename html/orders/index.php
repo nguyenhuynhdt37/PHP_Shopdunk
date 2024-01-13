@@ -77,6 +77,9 @@ order by dateOrder DESC";
         .edit-item {
             color: #000;
         }
+        footer {
+            display: none !important;
+        }
     </style>
 
 </head>

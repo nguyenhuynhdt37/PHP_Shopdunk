@@ -26,12 +26,12 @@ function SELECT_PRODUCT($id1, $conn, $dxa)
                             <div class="img-new container-fluid">
                                 <h3 class=" product__name--memory mb-5 fw-bold" style="font-size: 1.9rem;"><?= $row['title'] . ' ' . $row['name'] ?></h3>
 
-                                <div class="price price-all mb-2 fs-3 text-secondary">
+                                <span class="price price-all mb-2 fs-3 text-secondary ">
                                     <span class="price actual-price fw-bold fs-3 me-1"><?= number_format($row['discount']) ?>₫</span>
                                     <span class="price old-price fs-3 fw-normal me-1 text-decoration-line-through"><?= number_format($row['price']) ?>₫</span>
                                     <span class="price-ratio-container fs-4 fw-normal">-<?= (int)$x; ?>%</span>
 
-                                </div>
+                                </span>
                             </div>
                         </div>
                     </a>

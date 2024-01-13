@@ -76,7 +76,6 @@ if ($resultColor->num_rows > 0 && $resultMemory->num_rows > 0 && $name_pr->num_r
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/product_details.css?version=51">
     <link rel="stylesheet" type="text/css" href="./assets/css/modal.css?version=51">
-
 </head>
 
     <div class="product_details bg-white">
@@ -274,7 +273,7 @@ if ($resultColor->num_rows > 0 && $resultMemory->num_rows > 0 && $name_pr->num_r
                 </div>
             </div>
         </div>
-        <div class=" container-box" style="margin-top: 10rem;">
+        <div class=" container-box pb-5" style="margin-top: 10rem;">
 
             <div class="tab-details text-center">
                 <button type="button" class="btn btn-outline-primary" style="padding: 0.7rem 3rem !important; font-size: 1.5rem; font-weight: 1500; border-radius: 0.5rem;">Mô
@@ -363,8 +362,8 @@ if ($resultColor->num_rows > 0 && $resultMemory->num_rows > 0 && $name_pr->num_r
                     </div>
                     <div class="col-8 product__battery--img">
 
-                        <div class="x-img-box">
-                            <img src="../../assets/images/" data-aos="zoom-in" data-aos-duration="1800" data-aos-offset="200" class="py-5" style="width: 100">
+                        <div class="x-img-box text-center">
+                            <img src="../../assets/images/product/iphone/product_battery.png" data-aos="zoom-in" data-aos-duration="1800" data-aos-offset="200" class="py-5" style="width: 80%">
 
                         </div>
                     </div>
@@ -616,7 +615,7 @@ if ($resultColor->num_rows > 0 && $resultMemory->num_rows > 0 && $name_pr->num_r
 <script>
     const $$ = document.querySelectorAll.bind(document)
     const $ = document.querySelector.bind(document)
-    fetch('http://localhost/product/jsonServer/product_details.json')
+    fetch('http://applevn.com/jsonServer/product_details.json')
         .then(response => {
             return response.json();
         })

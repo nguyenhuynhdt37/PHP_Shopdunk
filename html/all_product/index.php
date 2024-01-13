@@ -6,7 +6,7 @@ include('./handle/function.php');
 
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./assets/css/product_all.css?version=54">
+    <link rel="stylesheet" type="text/css" href="./assets/css/product_all.css?version=55">
 </head>
 
 <div class="all">
@@ -175,7 +175,7 @@ include('./handle/function.php');
         <div class="product__iphone text-center ">
             <h2 class="title fw-bold " style="font-size: 3rem; padding: 2rem 0;">Tin Tức</h2>
             <div class="row list__product--main">
-                <div class=" note-xa col-md-4 col-lg-4 pe-4">
+                <div class=" note-xa col-md-12 col-lg-4  pe-4 bg-bg-white" style="">
                     <div class="card border-0" style="border-radius:1rem !important;">
                         <img src="https://shopdunk.com/images/thumbs/0023801_%E1%BA%A2nh%20m%C3%A0n%20h%C3%ACnh%202023-11-15%20l%C3%BAc%2016.28.31_1600.png" class="card-img-top" style="max-height: 218px !important;" alt="...">
                         <div class="card-body p-4 text-start">
@@ -187,7 +187,7 @@ include('./handle/function.php');
                         </div>
                     </div>
                 </div>
-                <div class=" note-xa col-md-4 col-lg-4 px-2">
+                <div class=" note-xa col-md-12 col-lg-4  px-2 bg-bg-white" style="">
                     <div class="card border-0" style="border-radius:1rem !important;">
                         <img src="https://shopdunk.com/images/thumbs/0023751_Screen%20Shot%202023-11-13%20at%2015.28.00_1600.png" class="card-img-top" style="max-height: 218px !important;" alt="...">
                         <div class="card-body p-4 text-start">
@@ -199,7 +199,7 @@ include('./handle/function.php');
                         </div>
                     </div>
                 </div>
-                <div class=" note-xa col-md-4 col-lg-4 ps-4">
+                <div class=" note-xa col-md-12 col-lg-4  ps-4 bg-bg-white" style="">
                     <div class="card border-0" style="border-radius:1rem !important;">
                         <img src="https://shopdunk.com/images/thumbs/0023713_co-nen-mua-macbook-pro-m3-ava_1600.jpeg" class="card-img-top" style="max-height: 218px !important;" alt="...">
                         <div class="card-body p-4 text-start">

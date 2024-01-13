@@ -48,6 +48,10 @@ html {
     padding: 2.5rem 0 !important;
 }
 
+.card-img-top {
+    min-height: 250px;
+}
+
 footer {
     border-top: 2px solid royalblue;
 }
@@ -68,6 +72,7 @@ nav a {
 .card-text:hover {
     cursor: pointer;
 }
+
 @media(max-width: 1023px) {
     .card-img-top {
         height: 140px;
@@ -81,16 +86,59 @@ nav a {
         margin-bottom: 20px !important;
     }
 
+    .img-new {
+        overflow: hidden;
+    }
+
     .price-all {
-        font-size: 0.2rem !important;
+        display: flex;
     }
 
     .product__name--memory {
-        font-size: 1.45rem !important;
+        font-size: 2rem !important;
     }
 
     .price-ratio-container {
         font-size: 1.2rem !important;
+    }
+
+    .box-x {
+        padding: 1.7 rem !important;
+
+    }
+
+    .price-all {
+        overflow: hidden !important;
+    }
+
+    .actual-price,
+    .old-price {
+        font-size: 1.8rem !important;
+    }
+
+    .card-img-top {
+        max-height: 500rem !important;
+    }
+
+    .note-xa {
+        margin-bottom: 5rem !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .product__fit--title {
+        font-size: 1.8rem !important;
+    }
+    .product__fit--more {
+        font-size: 1.2rem !important;
+    }
+    .product__fit {
+        min-height: 19rem !important;
+    }
+    .product__fit--img {
+        width: 110% !important;
+    }
+    .category__box {
+        padding: 2rem !important;
     }
 }
 
@@ -119,24 +167,9 @@ nav a {
         padding: 0 10px !important;
         margin-bottom: 2rem;
     }
-
-    .card-img-top {
-        min-height: 218px !important;
+    .product__more {
+        margin-bottom: 5rem !important;
     }
 
-    .old-price,
-    .price-ratio-container {
-        font-size: 1rem !important;
-    }
 
-    .price {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .product__name--memory {
-        /* font-size: 3rem !important; */
-    }
 }
-

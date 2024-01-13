@@ -156,7 +156,7 @@ include("./handle/function.php");
                     <li class="next-page list-unstyled bg-white me-4 fs-4  " style="border-radius: 0.7rem; padding: 0.6rem 1.3rem !important;"><a style="text-decoration: none;"><i class="fa-solid fa-chevron-right"></i></a></li>
 
                 </ul>
-                <div class="row product__sub my-5">
+                <div class="row product__sub mt-5">
                     <div class=" col-md-6 col-12 product__box">
                         <div class="product__fit bg-white" style="border-radius: 1rem !important;min-height: 24rem;">
                             <div class="row product__more align-items-center p-5">
