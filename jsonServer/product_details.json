@@ -1,40 +1,22 @@
 {
     "img": [
         {
-            "id": "white",
-            "images": [
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020084_iphone-15-pro-max-128gb_550.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020085_iphone-15-pro-max-128gb_550.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020087_iphone-15-pro-max-128gb.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020087_iphone-15-pro-max-128gb.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020088_iphone-15-pro-max-128gb.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020088_iphone-15-pro-max-128gb_550.jpeg"
-            ]
-        },
-        {
             "id": "black",
             "images": [
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020074_iphone-15-pro-max-128gb_550.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020075_iphone-15-pro-max-128gb.jpeg",
-                "https:\/\/shopdunk.com\/images\/thumbs\/0020078_iphone-15-pro-max-128gb_550.jpeg"
+                "https:\/\/shopdunk.com\/images\/thumbs\/0001207_space-gray_550.webp"
             ]
         }
     ],
     "prices": [
         {
-            "id": "256GB",
-            "old": "3990000",
-            "new": "3390000"
+            "id": "64GB",
+            "old": "19990000",
+            "new": "14900000"
         },
         {
-            "id": "512GB",
-            "old": "39990000",
-            "new": "35990000"
-        },
-        {
-            "id": "1T",
-            "old": "49990000",
-            "new": "45990000"
+            "id": "128GB",
+            "old": "23990000",
+            "new": "19990000"
         }
     ]
 }

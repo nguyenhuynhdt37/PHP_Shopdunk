@@ -113,7 +113,7 @@
                 } else {
                     $sql = "INSERT INTO users ( role_id, fullname, password) VALUE(  $role_id,  '$fullname1', '$password1')";
                     if (mysqli_query($conn, $sql)) {
-                        $_SESSION['user'] = $fullname1;
+                        $_SESSION['user'] = "$fullname1";
                         header("location: ../../index.php");
                         exit();
                     } else {

@@ -2,7 +2,7 @@
     $server = 'localhost';
     $user = 'root';
     $password = '';
-    $database = 'applestore';
+    $database = 'web';
 
     $conn = new mysqli($server, $user, $password, $database);
     

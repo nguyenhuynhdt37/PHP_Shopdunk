@@ -112,7 +112,7 @@
                 if ($row['role_id'] == 1) {
                     $check = 'admin';
                 } else {
-                    $_SESSION['user'] = $fullname;
+                    $_SESSION['user'] = "$fullname";
                     header('location: ../../index.php');
                     exit();
                 }

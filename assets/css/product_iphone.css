@@ -112,21 +112,7 @@ footer {
     .card-img-top {
         height: 140px;
     }
-    .product__fit--title {
-        font-size: 1.8rem !important;
-    }
-    .product__fit--more {
-        font-size: 1.2rem !important;
-    }
-    .product__fit {
-        min-height: 19rem !important;
-    }
-    .product__fit--img {
-        width: 110% !important;
-    }
-    .category__box {
-        padding: 2rem !important;
-    }
+   
 
 }
 
