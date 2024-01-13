@@ -476,7 +476,7 @@ body {
 .apple-watch:hover,
 .airpods:hover,
 .ipad-air:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .apple-watch {
@@ -500,7 +500,7 @@ body {
 }
 
 .benefits__list::-webkit-scrollbar {
-    height: 0;
+    /* height: 0; */
 }
 
 .scroll-btn-wrap {
