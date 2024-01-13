@@ -90,7 +90,7 @@ order by dateOrder DESC";
             <div class="col-12 col-lg-3">
                 <div class="sidebar rounded-4 bg-white py-4 px-2">
                     <div class="account d-flex px-3 justify-content-start align-items-center">
-                        <a href=""><img class="rounded-circle" src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/11/avatar-dep-84.jpg" alt="avatar người dùng" style="width: 3em; height: 3em;"></a>
+                        <a href=""><img class="rounded-circle" src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg" alt="avatar người dùng" style="width: 3em; height: 3em;"></a>
                         <h4 class="accout-name ms-4"><?= $userData['fullname'] ?></h4>
                     </div>
                     <ul class="nav flex-column account-menu mt-4">
