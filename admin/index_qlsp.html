@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Admin Dashboard | TuanIT</title>
+</head>
+
+<body>
+
+    <div class="container-fluid row gx-4">
+        <!-- Sidebar Section -->
+        <aside class="col-2">
+            <div class="logo">
+                <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg">
+                <h2>Tuan<span class="text-danger">CoderIT</span></h2>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Quản lý sản phẩm</h3>
+                </a>
+                <a href="index_user.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Quản lý User</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Thống kê</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Thông báo</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Trợ giúp</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Cài đặt</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Đăng xuất</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <div class="col-7">
+            <h1 class="product_management-title ">Quản lý sản phẩm</h1>
+            <div class="product_management-tools row-cols-auto mt-lg-4 ">
+                <button type="button" class="btn  btn-warning  border border-warning btn-outline-light text-dark "><i
+                        class="fa-solid fa-plus"></i> Thêm</button>
+                <button type="button" class="btn  btn-outline-light text-dark btn btn-warning border border-warning"><i
+                        class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+                <button type="button" class="btn  btn-outline-light text-dark btn btn-warning border border-warning"><i
+                        class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+                <button type="button" class="btn  btn-outline-light text-dark btn btn-warning border border-warning"><i
+                        class="fa-solid fa-trash-can"></i> Xóa chọn</button>
+            </div>
+            <div class="management container-fluid mt-5">
+                <div class="management-list col-2 me-2 ">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="management-item nav-item p-2 rounded-top-1">
+                            <div class="btn btn-warning btn-outline-dark" onclick="showTab('product-management', this)">Quản lý sản phẩm</div>
+                        </li>
+                        <li class="management-item nav-item p-2 rounded-bottom-1">
+                            <div class="btn btn-warning btn-outline-dark" onclick="showTab('category-management', this)">Quản lý danh mục</div>
+                        </li>
+                    </ul>                    
+                </div>
+                <div class="col-10">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show " id="product-management">
+                            <table class="table table-bordered custom-table">
+                                <thead class="table-info">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Img</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Categories</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img class="img-table"
+                                                src="https://kenh14cdn.com/203336854389633024/2024/1/13/photo-6-1705156068028253950024.jpg"
+                                                alt=""></td>
+                                        <td>Iphone 20 pro max plus plus</td>
+                                        <td>$20.00</td>
+                                        <td>5</td>
+                                        <td>Category A</td>
+                                        <td><a href="#"> [Edit]</a> </td>
+                                        <td><a href="#"> [Delete]</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade show " id="category-management">
+                            <table class="table table-bordered custom-table">
+                                <thead class="table-info">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Ảnh</th>
+                                        <th scope="col">Tên danh mục</th>
+                                        <th scope="col">Số lượng sp</th>
+                                        <th scope="col">Sửa</th>
+                                        <th scope="col">Xóa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>ảnh</td>
+                                        <td>danh mục 1</td>
+                                        <td>0</td>
+                                        <td>
+                                        </td>
+                                        <td><a href="#"> [Xóa]</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="col-3 right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Xin Chào, <b>Tuan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg">
+                    <h2>TuanCoderIT</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Nhắc nhở</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <span class="text-danger material-icons-sharp">
+                        edit
+                    </span>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Thi Xác suất Thống kê (27/12)</h3>
+                            <small class="text_muted">
+                                1:00 PM - 5:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <span class="text-warning material-icons-sharp">
+                        volume_up
+                    </span>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Tết Dương Lịch</h3>
+                            <small class="text_muted">
+                                Còn 8 ngày
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <button class="btn btn-outline-success w-100 text-center rounded-4">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Thêm lời nhắc</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="qlsp.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Admin Dashboard | TuanIT</title>
+</head>
+
+<body>
+
+    <div class="container-fluid row gx-4">
+        <!-- Sidebar Section -->
+        <aside class="col-2">
+            <div class="logo">
+                <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg">
+                <h2>Tuan<span class="text-danger">CoderIT</span></h2>
+            </div>
+
+            <div class="sidebar">
+                <a href="index_qlsp.html">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Quản lý sản phẩm</h3>
+                </a>
+                <a href="index_nguoidung.html" class="active">
+                    <span class="material-icons-sharp ">
+                        person_outline
+                    </span>
+                    <h3>Quản lý User</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Thống kê</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Thông báo</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Trợ giúp</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Cài đặt</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Đăng xuất</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <div class="col-7">
+            <h1 class="user-title mb-4">Quản lý User</h1>
+            <div class="user container-fluid mt-5">
+                <div class="col-2 me-2">
+                    <div class="user-list col-auto me-5 ">
+                        <div class="btn btn-warning btn-outline-dark d-block " onclick="showTab('all-user', this)">All
+                            User</div>
+                        <div class="btn btn-warning btn-outline-dark d-block" onclick="showTab('add-new', this)">Add New
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 ">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show " id="all-user">
+                            <div class="mb-5">
+                                <h3 class="all-user-title mb-5">All User </h3>
+                            </div>
+                            <div class="container-toolbar">
+                                <div class="btn btn-secondary me-2">Team <span class="badge bg-danger">2</span></div>
+                                <i class="fas fa-search" id="searchIcon"></i>
+                                <input style="display: none;" type="text" class="form-control me-2" id="searchInput" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+                            </div>                            
+                            <div class="mt-5">
+                                <div class="info-box">
+                                    <div class="td1 info-item">
+                                        <div>You have 2 team member</div>
+                                        <div class="btn btn-danger "onclick="showTab('add-new', this)">Add a team number</div>
+                                    </div>
+
+                                    <div class="d-flex info-item">
+                                        <div><i style="font-size: 100px;" class="fa-solid fa-user-secret"></i></div>
+                                        <div class="info">
+                                            <h3>TuanCoderIT</h3>
+                                            <p>@TuanCoderIT</p>
+                                            <div class="btn btn-dark">Quản trị viên</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex info-item">
+                                        <div><i style="font-size: 100px;" class="fa-solid fa-user-secret"></i></div>
+                                        <div class="info">
+                                            <h3>nguyenhuynhdt37</h3>
+                                            <p>@nguyenhuynhdt37</p>
+                                            <div class="btn btn-dark">Cộng tác viên</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="add-new">
+                            <div class="mb-5">
+                                <h3 class="all-user-title mb-5">Add New </h3>
+                            </div>
+                            <div class="add-new-form p-5">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Vai trò</label>
+                                        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                                            <option>Quản trị viên</option>
+                                            <option>Biên tập viên</option>
+                                            <option>Tác giả</option>
+                                            <option>Cộng tác viên</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Email or username</label>
+                                        <input type="email" class="form-control form-control-lg"
+                                            id="exampleFormControlInput1" placeholder="name@example.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Password</label>
+                                        <input type="password" class="form-control form-control-lg"
+                                            id="exampleInputPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="col-3 right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Xin Chào, <b>Tuan</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg">
+                    <h2>TuanCoderIT</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Nhắc nhở</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <span class="text-danger material-icons-sharp">
+                        edit
+                    </span>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Thi Xác suất Thống kê (27/12)</h3>
+                            <small class="text_muted">
+                                1:00 PM - 5:00 PM
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <span class="text-warning material-icons-sharp">
+                        volume_up
+                    </span>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Tết Dương Lịch</h3>
+                            <small class="text_muted">
+                                Còn 8 ngày
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <button class="btn btn-outline-success w-100 text-center rounded-4">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Thêm lời nhắc</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="qlsp.js"></script>
+</body>
+
+</html>
