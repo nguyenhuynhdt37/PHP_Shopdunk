@@ -457,3 +457,77 @@ main .recent-orders a {
     margin: 0;
     width: 100%;
 }
+
+.management,.user {
+    display: flex;
+    
+}
+
+.management-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7cd51;
+    border: 1px solid #f0b70d;
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.img-table {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.custom-table {
+    border: 2px solid #0f0e0e;
+    border-collapse: collapse;
+}
+
+.custom-table th {
+    background-color: rgba(252, 142, 63, 0.63);
+}
+
+.custom-table th,
+.custom-table td {
+    border: 2px solid rgb(1, 1, 173);
+    padding: 8px;
+    text-align: center;
+}
+
+.container-toolbar,.td1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infor-box
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+}
+
+.info-item,.form-group,.container-toolbar {
+    margin-top: 15px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.all-user-title{
+    font-size: 24px;
+    color:#090909;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+.add-new-form{
+    width: 100%;
+    background: white;
+}
