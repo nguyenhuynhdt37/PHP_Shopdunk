@@ -21,34 +21,34 @@ include("./handle/function.php");
 
         <div class="main__product">
             <div class="product__iphone text-center ">
-                <h2 class="title fw-bold " style="font-size: 4rem; margin: 5rem 0 !important;">iPhone</h2>
+                <h2 class="title fw-bold " style="font-size: 4rem; margin: 5rem 0 !important;">Mac</h2>
                 <ul class="list__iphone-product d-none py-5">
                     <li class="iphone_item">
                         <a href="" class="mode mode1"> Tất cả </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone 15 series </a>
+                        <a href="" class="mode"> Macbook 15 series </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone 14 series </a>
+                        <a href="" class="mode"> Macbook 14 series </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone 13 series </a>
+                        <a href="" class="mode"> Macbook 13 series </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone 12 series </a>
+                        <a href="" class="mode"> Macbook 12 series </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone 11 series </a>
+                        <a href="" class="mode"> Macbook 11 series </a>
                     </li>
                     <li class="iphone_item">
-                        <a href="" class="mode"> iPhone SE series </a>
+                        <a href="" class="mode"> Macbook SE series </a>
                     </li>
 
                 </ul>
                 <div class="row list__product--main">
                     <?php
-                    SELECT_PRODUCT(1, $conn, 6);
+                    SELECT_PRODUCT(2, $conn, 6);
                     ?>
                 </div>
                 <ul class="pager d-flex justify-content-center" style="margin: 3rem  0 4.5rem 0 !important;">
@@ -67,9 +67,9 @@ include("./handle/function.php");
                                 </div>
                                 <div class="col-md-7 col-7 product__fit--box text-start">
                                     <div class="product__fit--title fw-bold pb-4" style="font-size: 3rem;">Tìm
-                                        iPhone <br>phù hợp với bạn</div>
+                                        Macbook <br>phù hợp với bạn</div>
                                     <a href="#" class="product__fit--more fs-3 text-decoration-none">So sánh các
-                                        iPhone
+                                        Macbook
                                         <i class="fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
@@ -85,9 +85,9 @@ include("./handle/function.php");
                                 </div>
                                 <div class="col-md-7 col-7 product__fit--box text-start">
                                     <div class="product__fit--title fw-bold pb-4" style="font-size: 3rem;">Tìm
-                                        iPhone <br>phù hợp với bạn</div>
+                                        Macbook <br>phù hợp với bạn</div>
                                     <a href="#" class="product__fit--more fs-3 text-decoration-none">So sánh các
-                                        iPhone
+                                        Macbook
                                         <i class="fa-solid fa-angle-right"></i>
                                     </a>
                                 </div>
@@ -100,23 +100,23 @@ include("./handle/function.php");
                     <div class=" category-description">
                         <div class="category__history pb-4">
                             <h2 class="category__history--title fw-bold fs-1 pb-1">Lịch sử hình thành, phát triển
-                                của iPhone</h2>
+                                của Macbook</h2>
                             <p class="category__history--content" style="color: #333;font-size: 1.5rem;">iPhone là
                                 dòng điện thoại thông minh được phát
                                 triển
                                 từ
                                 Apple Inc, được ra mắt lần đầu tiên bởi Steve Jobs và mở bán năm 2007. Bên cạnh tính
                                 năng
-                                của một máy điện thoại thông thường, iPhone còn được trang bị màn hình cảm ứng,
+                                của một máy điện thoại thông thường, Macbook còn được trang bị màn hình cảm ứng,
                                 camera,
                                 khả
-                                năng chơi nhạc và chiếu phim, trình duyệt web... Phiên bản thứ hai là iPhone 3G ra
+                                năng chơi nhạc và chiếu phim, trình duyệt web... Phiên bản thứ hai là Macbook 3G ra
                                 mắt
                                 tháng
                                 7 năm 2008, được trang bị thêm hệ thống định vị toàn cầu, mạng 3G tốc độ cao. Trải
                                 qua
                                 15
-                                năm tính đến nay đã có đến 34 mẫu iPhone được sản xuất từ dòng 2G cho đến iPhone 13
+                                năm tính đến nay đã có đến 34 mẫu Macbook được sản xuất từ dòng 2G cho đến Macbook 13
                                 Pro
                                 Max
                                 và Apple là một trong những thương hiệu điện thoại được yêu thích và sử dụng phổ
@@ -127,19 +127,19 @@ include("./handle/function.php");
                         <div class=" category__history pb-4">
                             <h2 class="category__history--title fw-bold fs-1 pb-1">iPhone có những mã máy nào?</h2>
                             <p class="category__history--content" style="color: #333;font-size: 1.5rem;">Những chiếc
-                                iPhone do Apple phân phối tại thị
+                                Macbook do Apple phân phối tại thị
                                 trường
                                 nước
                                 nào thì sẽ mang mã của nước đó. Ví dụ: LL: Mỹ, ZA: Singapore, TH: Thái Lan, JA: Nhật
                                 Bản,
                                 Những mã này xuất hiện tại Việt Nam đều là hàng xách tay, nhập khẩu. Còn tại Việt
                                 Nam,
-                                iPhone sẽ được mang mã VN/A. Tất cả các mã này đều là hàng chính hãng phân phối của
+                                Macbook sẽ được mang mã VN/A. Tất cả các mã này đều là hàng chính hãng phân phối của
                                 Apple.
-                                Lợi thế khi bạn sử dụng iPhone mã VN/A đó là chế độ bảo hành tốt hơn với 12 tháng
+                                Lợi thế khi bạn sử dụng Macbook mã VN/A đó là chế độ bảo hành tốt hơn với 12 tháng
                                 theo
                                 tiêu
-                                chuẩn của Apple. iPhone của bạn sẽ được bảo hành tại tất cả các trung tâm bảo hành
+                                chuẩn của Apple. Macbook của bạn sẽ được bảo hành tại tất cả các trung tâm bảo hành
                                 Apple
                                 tại
                                 Việt Nam, một số mã quốc tế bị từ chối bảo hành và phải đem ra các trung tâm bảo
@@ -149,20 +149,20 @@ include("./handle/function.php");
                         </div>
                         <div class=" category__history pb-4">
                             <h2 class="category__history--title fw-bold fs-1 pb-1">Apple đã khai tử những dòng
-                                iPhone nào?</h2>
+                                Macbook nào?</h2>
                             <p class="category__history--content" style="color: #333;font-size: 1.5rem;">Tính đến
                                 nay, Apple đã khai tử (ngừng sản xuất)
                                 các
                                 dòng
-                                iPhone đời cũ bao gồm: iPhone 2G, iPhone 3G, iPhone 4, iPhone 5 series, iPhone 6
+                                Macbook đời cũ bao gồm: Macbook 2G, Macbook 3G, Macbook 4, Macbook 5 series, Macbook 6
                                 series,
-                                iPhone 7 series, iPhone 8 series, iPhone X series, iPhone SE (thế hệ 1), iPhone SE
+                                Macbook 7 series, Macbook 8 series, Macbook X series, Macbook SE (thế hệ 1), Macbook SE
                                 (thế
                                 hệ
-                                2), iPhone 11 Pro, iPhone 11 Pro Max, iPhone 12 Pro, iPhone 12 Pro Max.</p>
+                                2), Macbook 11 Pro, Macbook 11 Pro Max, Macbook 12 Pro, Macbook 12 Pro Max.</p>
                         </div>
                         <div class=" category__history pb-4">
-                            <h2 class="category__history--title fw-bold fs-1 pb-1">Apple cung cấp những dòng iPhone
+                            <h2 class="category__history--title fw-bold fs-1 pb-1">Apple cung cấp những dòng Macbook
                                 nào?</h2>
                             <p class="category__history--content" style="color: #333;font-size: 1.5rem;">ShopDunk là
                                 một trong những thương hiệu bán lẻ
@@ -173,7 +173,7 @@ include("./handle/function.php");
                                 dịch vụ chăm sóc khách hàng, Store Location đặt ...</p>
                         </div>
                         <div class=" category__history pb-4">
-                            <h2 class="category__history--title fw-bold fs-1 pb-1">Mua iPhone giá tốt nhất tại Apple
+                            <h2 class="category__history--title fw-bold fs-1 pb-1">Mua Macbook giá tốt nhất tại Apple
                             </h2>
                             <p class="category__history--content" style="color: #333;font-size: 1.5rem;">Apple là
                                 đại lý uỷ quyền Apple tại Việt Nam với hệ thống 40 cửa hàng trên toàn quốc, trong đó
@@ -183,7 +183,7 @@ include("./handle/function.php");
                                 nghiệm rộng rãi và đầy đủ sản phẩm.
                                 Tại ShopDunk luôn có mức giá tốt nhất cho người dùng cùng với nhiều chương trình hấp
                                 dẫn diễn ra liên tục trong tháng. Hãy đến với chúng tôi và trải nghiệm ngay những
-                                mẫu iPhone mới nhất với đội ngũ chuyên viên tư vấn được đào tạo bài bản từ Apple,
+                                mẫu Macbook mới nhất với đội ngũ chuyên viên tư vấn được đào tạo bài bản từ Apple,
                                 sẵn sàng hỗ trợ bạn về sản phẩm, kỹ thuật hay các công nghệ mới nhất từ Apple.</p>
                         </div>
                     </div>

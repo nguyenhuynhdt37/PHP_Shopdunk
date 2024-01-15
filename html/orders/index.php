@@ -88,7 +88,7 @@ order by dateOrder DESC";
     <div class="container">
         <div class="row mt-5">
             <div class="col-12 col-lg-3">
-                <div class="sidebar rounded-4 bg-white py-4 px-2">
+                <div class="sidebar rounded-4 bg-white py-4 px-2 mb-3">
                     <div class="account d-flex px-3 justify-content-start align-items-center">
                         <a href=""><img class="rounded-circle" src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg" alt="avatar người dùng" style="width: 3em; height: 3em;"></a>
                         <h4 class="accout-name ms-4"><?= $userData['fullname'] ?></h4>
@@ -102,7 +102,7 @@ order by dateOrder DESC";
                 </div>
             </div>
             <div class="col-12 col-lg-9">
-                <div class="card p-4 rounded-4 border-0">
+                <div class="card p-4 rounded-4 border-0 overflow-auto" style="max-height: 80vh;">
                     <nav>
                         <div class="nav nav-underline mb-3" id="nav-tab" role="tablist">
                             <button class="nav-link status px-3 text-dark active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Chờ xác nhận</button>
@@ -243,6 +243,10 @@ order by dateOrder DESC";
                                                     <td style="width: 20rem">Tên người nhận: </td>
                                                     <td><?= $row3['fullName'] ?></td>
                                                 </tr>
+                                                <tr>
+                                                    <td style="width: 20rem">Ngày đặt:  </td>
+                                                    <td><?=$row3['dateOrder']?> </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                         <div class="cart-options d-flex justify-content-end mt-4">
@@ -315,6 +319,10 @@ order by dateOrder DESC";
                                                     <td style="width: 20rem"><button class=" border-0 px-3 py-2 rounded-2 bg-primary text-white huydon">Hủy đơn</button></td>
 
                                                 </tr>
+                                                <tr>
+                                                    <td style="width: 20rem">Ngày đặt:  </td>
+                                                    <td><?=$row4['dateOrder']?></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                         <div class="cart-options d-flex justify-content-end mt-4">
@@ -344,11 +352,12 @@ order by dateOrder DESC";
                                                     <th class=" product">Tên sản phẩm </th>
                                                     <th class="unit-price">Giá bán </th>
                                                     <th class="quantity">Số lượng </th>
+                                                    <th class="quantity">Trạng thái </th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td style="width: 20rem" class="product-picture">
+                                                    <td style="width: 25rem" class="product-picture">
 
                                                         <img src="<?= $row5['image'] ?>" style="width: 40%;">
 
@@ -370,6 +379,9 @@ order by dateOrder DESC";
                                                     <td class="quantity">
                                                         <?= $row5['quantity'] ?>
                                                     </td>
+                                                    <td class="quantity">
+                                                       Đã hủy
+                                                    </td>
                                                 </tr>
                                                 <tr>
                                                     <td style="width: 20rem">Địa chỉ: </td>
@@ -384,8 +396,12 @@ order by dateOrder DESC";
                                                     <td><?= $row5['fullName'] ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="width: 20rem"><button class=" border-0 px-3 py-2 rounded-2 bg-primary text-white huydon">Hủy đơn</button></td>
-
+                                                    <td style="width: 20rem">Ngày đặt: </td>
+                                                    <td><?=$row5['dateOrder']?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 20rem">Ngày hủy: </td>
+                                                    <td><?=$row5['cancellationDate']?></td>
                                                 </tr>
                                             </tbody>
                                         </table>

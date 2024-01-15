@@ -13,7 +13,7 @@ include('./handle/function.php');
 
     <!-- All Content Container -->
     <div class="container-fluid p-0">
-    <?php include_once("./html/slide/slide.php") ?>
+        <?php include_once("./html/slide/slide.php") ?>
     </div>
     <div class="container">
         <div class="main__product">
@@ -39,16 +39,17 @@ include('./handle/function.php');
                 <h2 class="title fw-bold " style="font-size: 3rem; padding-bottom: 2rem;">iPhone</h2>
                 <div class="row list__product--main">
                     <?php
-                    SELECT_PRODUCT(1, $conn, 6);
+                    SELECT_PRODUCT(1, $conn, 4);
                     ?>
-                </div>
-                <button type="button" class="btn btn__show btn-outline-primary fs-5 my-5">Xem tất cả iPhone <i class="ms-1 fa-solid fa-angle-right fs-4" style="position: relative; top: 1px;"></i></button>
+                </div> <a href="" class="">
+                    <button type="button" class="btn btn__show btn-outline-primary fs-5 my-5">Xem tất cả iPhone <i class="ms-1 fa-solid fa-angle-right fs-4" style="position: relative; top: 1px;"></i></button>
+                </a>
             </div>
             <div class="product__iphone text-center ">
                 <h2 class="title fw-bold " style="font-size: 3rem; padding-bottom: 2rem;">iPad</h2>
                 <div class="row list__product--main">
                     <?php
-                    SELECT_PRODUCT(2, $conn, 6);
+                    SELECT_PRODUCT(2, $conn, 4);
                     ?>
                 </div>
                 <button type="button" class="btn btn__show btn-outline-primary fs-5 my-5">Xem tất cả iPad <i class="ms-1 fa-solid fa-angle-right fs-4" style="position: relative; top: 1px;"></i></button>
@@ -57,7 +58,7 @@ include('./handle/function.php');
                 <h2 class="title fw-bold " style="font-size: 3rem; padding-bottom: 2rem;">Mac</h2>
                 <div class="row list__product--main">
                     <?php
-                    SELECT_PRODUCT(3, $conn, 6);
+                    SELECT_PRODUCT(3, $conn, 4);
                     ?>
                 </div>
                 <button type="button" class="btn btn__show btn-outline-primary fs-5 my-5">Xem tất cả Mac <i class="ms-1 fa-solid fa-angle-right fs-4" style="position: relative; top: 1px;"></i></button>
@@ -66,7 +67,7 @@ include('./handle/function.php');
                 <h2 class="title fw-bold " style="font-size: 3rem; padding-bottom: 2rem;">Watch</h2>
                 <div class="row list__product--main">
                     <?php
-                    SELECT_PRODUCT(4, $conn, 6);
+                    SELECT_PRODUCT(4, $conn, 4);
                     ?>
                 </div>
                 <button type="button" class="btn btn__show btn-outline-primary fs-5 my-5">Xem tất cả Watch <i class="ms-1 fa-solid fa-angle-right fs-4" style="position: relative; top: 1px;"></i></button>

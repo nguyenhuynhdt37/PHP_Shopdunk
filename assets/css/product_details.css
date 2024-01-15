@@ -202,7 +202,7 @@ body {
 }
 
 .pink {
-    background-color: rgb(203, 144, 203);
+    background-color: rgb(228, 172, 202);
     opacity: 0.8;
     box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
@@ -222,8 +222,8 @@ body {
     box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
-.thereby {
-    background-color: #b063c3;
+.violet {
+    background-color: #ca9bd5;
     box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
