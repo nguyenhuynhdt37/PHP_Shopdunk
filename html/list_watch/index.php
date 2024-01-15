@@ -21,7 +21,7 @@ include("./handle/function.php");
 
         <div class="main__product">
             <div class="product__iphone text-center ">
-                <h2 class="title fw-bold " style="font-size: 4rem; margin: 5rem 0 !important;">iPhone</h2>
+                <h2 class="title fw-bold " style="font-size: 4rem; margin: 5rem 0 !important;">Apple Watch</h2>
                 <ul class="list__iphone-product d-none py-5">
                     <li class="iphone_item">
                         <a href="" class="mode mode1"> Tất cả </a>
