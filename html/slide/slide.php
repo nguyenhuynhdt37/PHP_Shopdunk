@@ -12,28 +12,28 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15pro_PC.jpg" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-all_PC.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15_PC.jpg" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-iphone15-tet_PC.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-ipad-air_PC.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-ipad-pro_PC.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-imac_PC.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-macbook-air_PC.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-macbook-pro_PC.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-macbook-pro-tet_PC.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-watch-s9_PC.jpg" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-all-product_PC.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15pro_PC.jpg" alt="">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-pc" data-bs-slide="prev">
@@ -61,28 +61,28 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15pro_MB.jpg" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-all_MB.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15_MB.jpg" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-iphone15-tet_MB.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-ipad-air_MB.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-ipad-pro_MB.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-imac_MB.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-macbook-air_MB.png" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-macbook-pro_MB.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-macbook-pro-tet_MB.jpg" alt="">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="./assets/images/slide/banner-watch-s9_MB.jpg" alt="">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/images/slide/banner-all-product_MB.png" alt="">
+            <img class="d-block w-100" src="./assets/images/slide/banner-iphone-15pro_MB.jpg" alt="">
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile" data-bs-slide="prev">
