@@ -6,7 +6,7 @@ include("./handle/function.php");
 ?>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./assets/css/product_iphone.css?version=51">
+    <link rel="stylesheet" type="text/css" href="./assets/css/product_all.css?version=55">
 </head>
 
 <div class="product_list">
