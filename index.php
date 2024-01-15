@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css?version=51" />
     <link rel="stylesheet" href="./assets/bootstrap-5.3.2-dist/css/bootstrap.css?version=51">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?version=51" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 
 </head>
 <style>
@@ -48,6 +53,21 @@
         <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
         <?php
         include_once('./handle/connect.php');
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+        if (isset($_SESSION['user'])) {
+            $user_name = $_SESSION["user"];
+            $sql = "SELECT role_id from users where fullname = '$user_name'";
+            $sql1 = mysqli_query($conn, $sql);
+            if ($result = mysqli_fetch_assoc($sql1)) {
+                if ($result['role_id'] == 1) {
+                    header('Location: ./admin/index.php');
+                    exit;
+                }
+            }
+        }
+
         include_once("./html/header/index.php");
         if (isset($_GET['page_layout'])) {
             $page_layout = $_GET['page_layout'];
@@ -101,7 +121,31 @@
     <script type="text/javascript" src="./assets/js/blossom.js?"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" integrity="sha512-/WaZCC76Yn6MLEoK6b9np9yiLBet/RngBS33X1P0SHuag6j2E0e5rT7jbA2CvXCydN6+FkDYNx8FBM+vkzsthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>AOS.init();</script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            check = true;
+            fetch('./handle/userAccess.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        check
+                    }),
+                })
+                .then(response => response.text())
+                .then(data => {
+                    if (data === "done")
+                        console.log("cảm ơn khách hàng")
+                })
+                .catch(error => {
+                    console.error('Error:', error)
+                });
+        });
+    </script>
 </body>
 
 </html>

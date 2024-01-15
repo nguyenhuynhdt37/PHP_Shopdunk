@@ -103,10 +103,10 @@ $result = mysqli_query($conn, $sql);
                         <?php
                         if (mysqli_num_rows($result) > 0) {
                         ?>
-                            <div class="table-responsive2">
+                            <div class="table-responsive    ">
                                 <table class="table list-title p-0 m-5 border-button">
                                     <thead class="cart-title">
-                                        <tr class="" style="height: 10 rem !important;">
+                                        <tr class="" style="">
                                             <th class="fs-4 fw-bold ps-4">Hình ảnh</th>
                                             <th class="fs-4 fw-bold">Tên sản phẩm</th>
                                             <th class="fs-4 fw-bold">Giá bán</th>

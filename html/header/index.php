@@ -39,14 +39,13 @@
 include('./handle/connect.php');
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    $user_name = '';
-    if (isset($_SESSION['user'])) {
-        $user_name = $_SESSION['user'];
-        if (isset($_POST['logout'])) {
-            $_SESSION = array();
-            header("location: ./index.php");
-            exit();
-        }
+}
+if (isset($_SESSION['user'])) {
+    $user_name = $_SESSION['user'];
+    if (isset($_POST['logout'])) {
+        $_SESSION = array();
+        header("location: ./index.php");
+        exit();
     }
 }
 ?>
@@ -115,11 +114,10 @@ if (session_status() == PHP_SESSION_NONE) {
                 </ul>
                 <!-- LogIn and SignUp Page -->
                 <?php
-                if ($user_name == '') {
+                if (!isset($user_name)) {
                 ?>
                     <a href="./html/sign-up/index.php" class="auth-form-btn text-dark text-decoration-none ms-4 fs-4">Đăng ký</a>
                     <a href="./html/login/index.php" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-4"> Đăng nhập</a>
-
                 <?php
                 } else { ?>
                     <div class="box-user position-relative fs-4 text-capitalize d-flex align-items-center">
@@ -127,20 +125,20 @@ if (session_status() == PHP_SESSION_NONE) {
                             <div class="span d-inline">
                                 <img src="https://i.pinimg.com/236x/ad/0a/ec/ad0aec5a2b39bbb0d5d444562f423a2d.jpg" style="width: 3rem; border-radius: 50%; margin-right: 1rem;" alt="">
                             </div>
-                            <?= $user_name; ?>
-                                <ul class="order p-0 position-absolute bg-body-tertiary rounded-3 text-center" style="top: 4.8rem;left: 3rem;width: 16rem">
-                                    <li class="order_deltais p-2 mb-2 d-none">
-                                        <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Tài khoản của tôi</a>
-                                    </li>    
-                                    <li class="order_deltais p-2 mb-2 d-none">
-                                        <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Chi tiết đơn hàng</a>
-                                    </li>
-                                    <li class="order_deltais p-2 d-none mt-2" style="cursor: default;">
-                                        <form method="post">
-                                            <button type="submit" name="logout" class="btn btn-success me-3 ms-4 fs-4">Đăng Xuất</button>
-                                        </form>
-                                    </li>
-                                </ul>
+                            <div class="user-name"> <?= $user_name; ?></div>
+                            <ul class="order p-0 position-absolute bg-body-tertiary rounded-3 text-center" style="top: 4.8rem;left: 3rem;width: 16rem">
+                                <li class="order_deltais p-2 mb-2 d-none">
+                                    <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Tài khoản của tôi</a>
+                                </li>
+                                <li class="order_deltais p-2 mb-2 d-none">
+                                    <a href="index.php?page_layout=orders" class="order_link text-decoration-none text-dark">Chi tiết đơn hàng</a>
+                                </li>
+                                <li class="order_deltais p-2 d-none mt-2" style="cursor: default;">
+                                    <form method="post">
+                                        <button type="submit" name="logout" class="btn btn-success me-3 ms-4 fs-4">Đăng Xuất</button>
+                                    </form>
+                                </li>
+                            </ul>
                         </span>
                     </div>
                 <?php } ?>

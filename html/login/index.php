@@ -110,7 +110,9 @@
             if (mysqli_num_rows($result) == 1) {
                 $row = mysqli_fetch_assoc($result);
                 if ($row['role_id'] == 1) {
-                    $check = 'admin';
+                    $_SESSION['user'] = "$fullname";
+                    header('location: ../../admin/index.php');
+                    exit();
                 } else {
                     $_SESSION['user'] = "$fullname";
                     header('location: ../../index.php');

@@ -153,11 +153,14 @@ aside .sidebar a:last-child {
     width: 100%;
 }
 
+
+
 aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
     background-color: var(--color-light);
     margin-left: 0;
+    background-color: #181a1e !important;
 }
 
 aside .sidebar a.active::before {
@@ -202,9 +205,9 @@ main .status {
 }
 
 main .analyse>div .status {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 main .analyse h3 {
