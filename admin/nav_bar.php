@@ -1,9 +1,3 @@
-<?php
-include('../handle/connect.php');
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
- ?>
 <aside class="col-2">
     <div class="oclock_box bg-white mt-4 d-flex fs-4 p-3" style="border-radius: 20px;">
         <div class="title fw-bold me-2">
@@ -39,13 +33,6 @@ if (session_status() == PHP_SESSION_NONE) {
             </span>
             <h3>Quản lý đơn hàng</h3>
         </a>
-        <a class="link_start" href="index.php?page=notification">
-            <span class="material-icons-sharp">
-                mail_outline
-            </span>
-            <h3>Thông báo</h3>
-            <span class="message-count">27</span>
-        </a>
         <a class="link_start logout">
             <span class="material-icons-sharp">
                 logout
@@ -54,6 +41,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </a>
     </div>
 </aside>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     function updateClock() {
         var now = new Date();

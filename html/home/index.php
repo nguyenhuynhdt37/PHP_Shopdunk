@@ -756,13 +756,6 @@
         </div>
     </div>
 
-    <!-- Modal search -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <input class="search-bar form-control form-control-lg fs-4 ps-4" type="search" placeholder="Search..." aria-label="Search">
-            </div>
-        </div>
-    </div>
+    
 </div>
 <script src="./assets/js/home.js"></script>

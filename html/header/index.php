@@ -1,3 +1,16 @@
+<?php
+include('./handle/connect.php');
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+if (isset($_SESSION['user'])) {
+    $user_name = $_SESSION['user'];
+    if (isset($_POST['logout'])) {
+        $_SESSION = array();
+        header("Location: ./index.php");
+        exit();
+    }
+}?>
 <head>
     <link rel="stylesheet" type="text/css" href="./assets/css/home.css?version=51">
     <link rel="stylesheet" type="text/css" href="./assets/css/responsive-home.css?version=51">
@@ -31,24 +44,21 @@
         .user_name {
             font-size: 2rem;
         }
+
+        .order {
+            min-width: 100% !important;
+            left: 0 !important;
+            top: 3.7rem !important;
+            text-align: start !important;
+            padding-left: 35px !important;
+        }
+
+        .btn-1 {
+            margin: 0 !important;
+            font-size: 2rem !important;
+        }
     }
 </style>
-
-
-<?php
-include('./handle/connect.php');
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-if (isset($_SESSION['user'])) {
-    $user_name = $_SESSION['user'];
-    if (isset($_POST['logout'])) {
-        $_SESSION = array();
-        header("location: ./index.php");
-        exit();
-    }
-}
-?>
 <div class="header">
     <!-- Header Navbar by Bootstrap -->
     <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
@@ -135,7 +145,7 @@ if (isset($_SESSION['user'])) {
                                 </li>
                                 <li class="order_deltais p-2 d-none mt-2" style="cursor: default;">
                                     <form method="post">
-                                        <button type="submit" name="logout" class="btn btn-success me-3 ms-4 fs-4">Đăng Xuất</button>
+                                        <button type="submit" name="logout" class="btn btn-1 btn-success me-3 ms-4 fs-4">Đăng Xuất</button>
                                     </form>
                                 </li>
                             </ul>
@@ -145,5 +155,13 @@ if (isset($_SESSION['user'])) {
             </div>
         </div>
     </nav>
+</div>
+<!-- Modal search -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <input class="search-bar form-control form-control-lg fs-4 ps-4" type="search" placeholder="Search..." aria-label="Search">
+        </div>
+    </div>
 </div>
 </body>

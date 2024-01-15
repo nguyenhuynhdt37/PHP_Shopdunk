@@ -50,6 +50,12 @@ if (isset($_SESSION['user'])) {
                 case 'orders_management':
                     include("./order_management.php");
                     break;  
+                case 'qlsp':
+                    include("./qlsp.php");
+                    break;  
+                    case 'users':
+                        include("./qluser.php");
+                        break;  
                 default:
                     include_once("./home.php");
                     break;
